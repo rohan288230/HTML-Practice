@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="name">Full Name : </label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </p>
+            <p>
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </p>
+            <p>
+                <lable for="password">Password : </lable>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </p>
+            <p>
+                <label for="age">Age : </label>
+                <input type="number" id="age" name="age" min="16" max="60" required>
+            </p>
+            <p>
+                <label for="dob">Date of Birth : </label>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="gender">
+            <label for="others">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Course & Skills</legend>
+            <p>
+                <label for="course">Select Course : </label>
+                <select id="course">
+                    <option value="">-- Select Course --</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bca">BCA</option>
+                    <option value="mca">MCA</option>
+                    <option value="bba">BBA</option>
+                </select>
+            </p>
+            <p>Skills : </p>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="sql" name="skills" value="sql">
+            <label for="sql">SQL</label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information : </legend>
+            <p>
+                <label for="photo">Profile Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </p>
+            <p>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="5" cols="40" placeholder="Enter your address"
+                    required></textarea>
+            </p>
+        </fieldset>
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
