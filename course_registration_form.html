@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Course Registration Form</legend>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="course">Select Course : </label>
+            <select id="course" name="course" required>
+                <option value="">--Select Course--</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="mern">MERN</option>
+            </select>
+            <br>
+            <p>Gender : </p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <br>
+            <p>Skills : </p>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="react" name="skills" value="react">
+            <label for="react">React</label>
+            <br>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" name="dob" min="16" max="50" required>
+            <br>
+            <label for="message">Why do you want to join?</label>
+            <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your reason..."></textarea>
+            <br>
+            <label for="terms">I agree to the terms and conditions.</label>
+            <input type="checkbox" id="terms" name="terms" value="accepted">
+            <br>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
