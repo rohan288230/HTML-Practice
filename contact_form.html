@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <h1>Contact us</h1>
+    <form>
+        <p>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="phone">Phone : </label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+        <p>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </p>
+        <p>
+            <label for="reason">Reason for Contact : </label>
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason</option>
+                <option value="inquiry">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="partnership">Partnership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <p>Preferred Contact Method : </p>
+        <input type="radio" id="contact-email" name="preferred_contact" value="email">
+        <label for="contact-email">Email</label>
+        <input type="radio" id="contact-phone" name="preferred_contact" value="phone">
+        <label for="contact-phone">Phone</label>
+        <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" cols="50" minlength="10" maxlength="1000"
+                required></textarea>
+        </p>
+        <p>
+            <label for="attachment">Attachment : </label>
+            <input type="file" id="attachment" name="attachment">
+        </p>
+        <p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Subscribe me to the newsletter.</label>
+        </p>
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
