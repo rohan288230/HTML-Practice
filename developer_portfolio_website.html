@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rohan Singh Ramola</h1>
+        <p>Aspiring Full Stack Mern Developer</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="learning">Learning</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Hi, I am Rohan</h2>
+            <img src="profile.jpg" alt="profile photo of rohan" width="`200">
+            <p>I am an aspiring Mern Stack Developer intrested in building practical web application.</p>
+            <p>Currently learning frontend development, backend development and database technologies.</p>
+            <p><a href="mailto:rohansinghramola9312@gmail.com">Email me</a>
+                <a href="https://github.com/rohan288230" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="www.linkedin.com/in/rohan-singh-ramola-b766882aa" target="_blank"
+                    rel="noopener noreferrer">Linkedin</a>
+            </p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am focused on developing strong programming and web development skills through hands-on projects and
+                problem solving.</p>
+            <p>My career goal is to become a progessional full stack developer and build useful, scalable web
+                application.</p>
+            <h3>Currently Learning</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+            </ul>
+            <blockquote>"The best way to learn programming is by building."</blockquote>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+            </ul>
+            <h3>Database</h3>
+            <ul>
+                <li>MongoDB</li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+                <li>Git</li>
+                <li>Github</li>
+                <li>VS Code</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1">
+                <caption>Educational Qualifications</caption>
+                <thead>
+                    <tr>
+                        <th>qualification</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor's Degree</td>
+                        <td>AKIT, Tanakpur</td>
+                        <td>2026</td>
+                        <td>8 CGPA</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>Sarvodaya Co-ed Vidalaya</td>
+                        <td>2021</td>
+                        <td>82%</td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>Government Boys Senior Secondary School</td>
+                        <td>2019</td>
+                        <td>88%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Personal Portfolio</h3>
+                <img src="portfolio.jpg" alt="screenshot of personal portfolio Website" width="300">
+                <p>A personal portfolio website created to showcase my skills, education and projects.</p>
+                <a href="#">View project</a>
+            </article>
+            <article>
+                <h3>Student Management System</h3>
+                <img src="student-management.jpg" alt="screenshot of student-management System" width="300">
+                <p>A web application for managing student information and academic records.</p>
+                <p>Technologies : HTML, CSS, JavaScript, Node.js, MongoDB</p>
+                <a href="#">View Project</a>
+            </article>
+            <article>
+                <h3>Task Management App</h3>
+                <img src="task-management.jpg" alt="screenshot of task-management application" width="300">
+                <p>A task management application that allows users to organize and track tasks.</p>
+                <p>Technologies : HTML, CSS, JavaScript</p>
+                <a href="#">View Project</a>
+            </article>
+        </section>
+        <section id="learning">
+            <h2>Experience & Learning</h2>
+            <article>
+                <h3>Current Focus</h3>
+                <p>Currently focusing on frontend development and building practical web development projects.</p>
+            </article>
+            <article>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Mern Stack Development Certifications</li>
+                    <li>Python Certification</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Milestones</h3>
+                <ol>
+                    <li>Completed HTML Fundamentals</li>
+                    <li>Started CSS Fundamentals</li>
+                    <li>Started JavaScript practice</li>
+                    <li>Building portfolio projects</li>
+                </ol>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="full-name">Full Name : </label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" minlength="2"
+                        maxlength="50" required>
+                    <br>
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}">
+                    <br>
+                    <label for="subject">Subject : </label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                    <br>
+                    <label for="reason">Reason for contact : </label>
+                    <select id="reason" name="reason" required>
+                        <option value="">--Select Reason--</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="internship">Internship</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <p>Preffered Contact Method : </p>
+                    <label for="email"><input type="radio" id="email" name="preferred_contact" value="email"
+                            required>Email</label>
+                    <label for="phone"><input type="radio" id="email" name="preferred_contact"
+                            value="phone">Phone</label>
+                    <label for="message">Message : </label>
+                    <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message..."
+                        minlength="10" maxlength="500" required></textarea>
+                    <br>
+                    <label for="resume">Upload Resume : </label>
+                    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+                    <br>
+                    <label><input type="checkbox" name="terms" value="accepted" required>I agree to the terms and
+                        conditions.</label>
+                    <br>
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rohan Singh Ramola. All Right Reserved.</p>
+        <p>
+            <a href="mailto:rohansinghramola9312@gmail.com">Email</a>
+            <a href="https://github.com/rohan288230" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="www.linkedin.com/in/rohan-singh-ramola-b766882aa" target="_blank"
+                rel="noopener noreferrer">Linkedin</a>
+        </p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+
+</html>
