@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College - Admissions</title>
+</head>
+
+<body id="top">
+    <header>
+        <img src="college.jpg" alt="Uttrakhand Technical University" width="100" height="100">
+        <h1>Uttrakhand Technical University</h1>
+        <p>Excellence in Education and Innovation</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#admission">Admission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Uttrakhand Technical University</h2>
+            <p>Welcome to Uttrakhand Technical University, an institution focused on quality education, innovation and
+                career development.</p>
+        </section>
+        <section id="about">
+            <h2>About the college</h2>
+            <p>
+                Uttrakhand Technical University provides undergraduate and postgraduate programs designed to prepare
+                students for modern professional careers.
+            </p>
+            <figure>
+                <img src="college.jpg" alt="Main campus building of Uttrakhand Technical University">
+                <figcaption>Main campus of Uttrakhand Technical University</figcaption>
+            </figure>
+        </section>
+        <section id="courses">
+            <h2>Courses Offered</h2>
+            <table border="1">
+                <caption>Availabe Academic Programs</caption>
+                <thead>
+                    <tr>
+                        <th>Courses</th>
+                        <th>Duration</th>
+                        <th>Eligibility</th>
+                        <th>Seats</th>
+                        <th>Fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>4 Years</td>
+                        <td>12th with PCM</td>
+                        <td>120</td>
+                        <td>1,20,000/year</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech ECE</td>
+                        <td>4 Years</td>
+                        <td>12th with PCM</td>
+                        <td>90</td>
+                        <td>1,15,000/year</td>
+                    </tr>
+                    <tr>
+                        <td>BCA</td>
+                        <td>3 Years</td>
+                        <td>12th Pass</td>
+                        <td>60</td>
+                        <td>80,000/year</td>
+                    </tr>
+                    <tr>
+                        <td>MCA</td>
+                        <td>2 Years</td>
+                        <td>Graduation</td>
+                        <td>60</td>
+                        <td>1,00,000/year</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="admission">
+            <h2>Admission Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <p>
+                        <label for="student-name">Student Name : </label>
+                        <input type="text" id="student-name" name="student-name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone : </label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    </p>
+                    <p>
+                        <label for="dob">Date of Birth : </label>
+                        <input type="date" id="dob" name="date_of_birth" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Academic Information</legend>
+                    <p>
+                        <label for="course">Course : </label>
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="btech-cse">B.Tech CSE</option>
+                            <option value="btech-ece">B.Tech ECE</option>
+                            <option value="bca">BCA</option>
+                            <option value="mca">MCA</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="qualification">Previous Qualification : </label>
+                        <input type="text" id="qualification" name="qualification" required>
+                    </p>
+                    <p>
+                        <label for="percentage">Previous Percentage : </label>
+                        <input type="text" id="percentage" name="percentage" min="0" max="100" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Parents/Guardian Information</legend>
+                    <p>
+                        <label for="parents_name">Parent/Guardian Name : </label>
+                        <input type="text" id="parents_name" name="parents_name" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend>
+                    <p>
+                        <label for="address">Full Address : </label>
+                    </p>
+                    <textarea id="address" name="address" rows="5" cols="50" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Documents</legend>
+                    <p>
+                        <label for="documents">Upload Documents : </label>
+                        <input type="file" id="documents" name="documents" multiple required>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="checkbox" id="aggrement" name="aggrement" value="accepted" required>
+                    <label for="aggrement">I confirm that the information provided is correct.</label>
+                </p>
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <address>
+                Uttrakhand Technical University<br>
+                Dehradun, Uttrakhand<br>
+                Email : <a href="mailto:utuadmissions@gmail.com">utuadmissions@gmail.com</a><br>
+                Phone : <a href="tel:+911234567890">+91 12345 69870</a>
+            </address>
+            <p>
+                Office Timings :
+                <time datetime="09:00">9:00 AM</time>-
+                <time datetime="17:00">5:00 PM</time>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2026 Uttrakhand Technical University. All rights reserved.
+        </p>
+        <p>
+            <a href="#top">Back to Top</a>
+        </p>
+    </footer>
+</body>
+
+</html>
